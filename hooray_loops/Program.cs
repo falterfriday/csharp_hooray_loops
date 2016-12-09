@@ -21,16 +21,28 @@ namespace hooray_loops
         //        Console.WriteLine("the fruit of the day is: " + fruit[i]);
         //    }
         //}
+        //static void Main(string[] args)
+        //{
+        //    int counter = 1;
+        //    int max = 10;
+
+        //    while (counter <= max)
+        //    {
+        //        Console.WriteLine("Loop number: " + counter);
+        //        counter++;
+        //    }
+        //}
         static void Main(string[] args)
         {
-            int counter = 1;
-            int max = 10;
+            int counter = 0;
+            string welcome = "Hello, World!";
 
-            while (counter <= max)
+            do
             {
-                Console.WriteLine("Loop number: " + counter);
+                Console.WriteLine(welcome[counter]);
                 counter++;
-            }
+
+            } while (counter < welcome.Length);
         }
     }
 }
