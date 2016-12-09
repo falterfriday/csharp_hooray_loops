@@ -32,17 +32,27 @@ namespace hooray_loops
         //        counter++;
         //    }
         //}
+        //static void Main(string[] args)
+        //{
+        //    int counter = 0;
+        //    string welcome = "Hello, World!";
+
+        //    do
+        //    {
+        //        Console.WriteLine(welcome[counter]);
+        //        counter++;
+
+        //    } while (counter < welcome.Length);
+        //}
         static void Main(string[] args)
         {
-            int counter = 0;
-            string welcome = "Hello, World!";
+            string[] fruit = { "Oranges", "Bananas", "Kiwis" };
 
-            do
+            foreach (var item in fruit)
             {
-                Console.WriteLine(welcome[counter]);
-                counter++;
+                Console.WriteLine("The fruit: " + item);
+            }
 
-            } while (counter < welcome.Length);
         }
     }
 }
